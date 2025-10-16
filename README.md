@@ -12,15 +12,20 @@ More details in article.
 ## Usage Summary
 For basic AFL usage, check the online AFL docs or AFL github.
 For basic seed usage, the same initialization and input/output directories as AFL apply:
+
+```bash
 # Compile target program with afl-gcc or afl-clang
 CC=/path/to/afl-gcc ./configure
 make
-
+```
+```bash
 # Create input and output directories
 mkdir input output
-
+```
+```bash
 # Run TMS-Fuzz
 ./afl-fuzz -i input -o output -d -- /path/to/target @@
+```
 
 ## Notes:
 
